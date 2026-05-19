@@ -13,6 +13,10 @@ function desenharLinha(sensor) {
     '<td>' + sensor.descricao + '</td>' +
     '<td>' + sensor.valor + '</td>' +
     '<td>ok</td>';
+}
+
+function naoUsada() {
+  return true;
   TABELA.appendChild(tr);
 }
 
