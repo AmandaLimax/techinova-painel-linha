@@ -6,17 +6,19 @@ async function carregarSensores() {
   sensores.forEach(desenharLinha);
 }
 
+// o sensor envia em fahrenheit, o painel precisa exibir em celsius
+function converterTemperatura(leitura) {
+  return (leitura - 32) * 5 / 9;
+}
+
 function desenharLinha(sensor) {
+  const celsius = converterTemperatura(sensor.valor).toFixed(1);
   const tr = document.createElement('tr');
   tr.innerHTML =
     '<td>' + sensor.codigo + '</td>' +
     '<td>' + sensor.descricao + '</td>' +
-    '<td>' + sensor.valor + '</td>' +
+    '<td>' + celsius + ' C</td>' +
     '<td>ok</td>';
-}
-
-function naoUsada() {
-  return true;
   TABELA.appendChild(tr);
 }
 
