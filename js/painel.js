@@ -22,4 +22,9 @@ function desenharLinha(sensor) {
   TABELA.appendChild(tr);
 }
 
+function marcarAtualizacao() {
+  document.querySelector('#atualizado').textContent = new Date().toLocaleString('pt-BR');
+}
+
 carregarSensores();
+marcarAtualizacao();
