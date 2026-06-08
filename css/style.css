@@ -8,6 +8,8 @@ header {
   background: #999999;
   color: #ffffff;
   padding: 16px 24px;
+  display: flex;
+  align-items: center;
 }
 
 table {
