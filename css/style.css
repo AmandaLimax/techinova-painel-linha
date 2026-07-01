@@ -23,3 +23,7 @@ th, td {
   text-align: left;
   border-bottom: 1px solid #dddddd;
 }
+
+table {
+  margin-top: 12px;
+}
